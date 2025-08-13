@@ -1,0 +1,190 @@
+# 🛡️ Sauce Demo Automation - GitIgnore
+# Configuración para evitar subir archivos innecesarios o sensibles
+
+# ==========================================
+# 📁 DIRECTORIOS DE BUILD Y COMPILACIÓN
+# ==========================================
+target/
+build/
+out/
+bin/
+
+# ==========================================
+# ☕ ARCHIVOS ESPECÍFICOS DE JAVA
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# 📊 REPORTES Y LOGS GENERADOS
+# ==========================================
+target/cucumber-reports/
+target/surefire-reports/
+target/failsafe-reports/
+reports/
+*.log
+logs/
+
+# ==========================================
+# 🔧 HERRAMIENTAS DE BUILD
+# ==========================================
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ==========================================
+# 💻 IDEs Y EDITORES
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.pydevproject
+.metadata
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ==========================================
+# 🌐 PLAYWRIGHT Y NAVEGADORES
+# ==========================================
+# Binarios de navegadores instalados por Playwright
+# (Se reinstalan automáticamente cuando es necesario)
+/ms-playwright/
+playwright-browsers/
+**/ms-playwright/
+test-results/
+playwright-report/
+
+# Screenshots de tests fallidos
+screenshots/
+test-results-*/
+
+# ==========================================
+# 💾 ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==========================================
+# 🔐 ARCHIVOS SENSIBLES Y CONFIGURACIONES
+# ==========================================
+# Credenciales y configuraciones locales
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuraciones específicas del desarrollador
+application-local.properties
+config-local.yml
+local.properties
+
+# Archivos de backup
+*.backup
+*.bak
+*.orig
+
+# ==========================================
+# 📦 DEPENDENCIAS Y CACHE
+# ==========================================
+# Node.js (si se usa para herramientas adicionales)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache de Maven
+.m2/repository/
+
+# ==========================================
+# 🔧 HERRAMIENTAS DE DESARROLLO
+# ==========================================
+# JRebel
+rebel.xml
+
+# Coverage reports
+coverage/
+*.lcov
+
+# ==========================================
+# 📝 ARCHIVOS TEMPORALES
+# ==========================================
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ==========================================
+# 🎯 ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ==========================================
+# Configuraciones de entorno específicas
+test-config-local.properties
+
+# Datos de prueba temporales
+test-data-generated/
+
+# ==========================================
+# 📱 ARCHIVOS QUE SÍ DEBEN INCLUIRSE
+# ==========================================
+# Asegurar que estos archivos importantes se incluyan:
+!.gitignore
+!README.md
+!pom.xml
+!src/
+!.github/
