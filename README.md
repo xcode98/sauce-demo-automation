@@ -118,7 +118,7 @@ Los reportes se generan automáticamente en:
 
 Para ver el reporte HTML:
 ```bash
-open target/cucumber-reports/cucumber.html
+open target/cucumber-reports/smoke-tests.html
 ```
 
 
